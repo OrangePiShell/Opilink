@@ -1,0 +1,267 @@
+# Orange Pi Link translation. Format: English text<TAB>translation
+# "*" in the English text matches any text; {0}, {1} in the translation put it back. \n = new line.
+Board IP	IP платы
+User	Пользователь
+Find board on my network	Найти плату в сети
+Connect and check the board	Подключиться и проверить плату
+Type the IP of the board, or press "Find board".	Введите IP платы или нажмите «Найти плату».
+Login uses a key made only for this app. No password is stored.	Вход выполняется по ключу, созданному только для этого приложения. Пароль не сохраняется.
+Searching your network...	Поиск в сети...
+Searching your network... *%	Поиск в сети... {0}%
+No board found. Check that it is on and on the same modem, or type the IP.	Плата не найдена. Убедитесь, что она включена и подключена к тому же роутеру, или введите IP.
+Found the board: *\n* devices have SSH open; the first one was picked.	Плата найдена: {0}\nSSH открыт на устройствах: {1}; выбрано первое.
+Found a device with SSH (not sure it is the board): *\n* devices have SSH open; the first one was picked.	Найдено устройство с SSH (не уверен, что это плата): {0}\nSSH открыт на устройствах: {1}; выбрано первое.
+Found the board: *	Плата найдена: {0}
+Found a device with SSH (not sure it is the board): *	Найдено устройство с SSH (не уверен, что это плата): {0}
+Search failed: *	Поиск не удался: {0}
+Press "Connect and check the board" (or any tool).	Нажмите «Подключиться и проверить плату» (или любой инструмент).
+Connected to *	Подключено к {0}
+System not detected - all tools stay enabled	Система не определена - все инструменты остаются включёнными
+View board like WSL	Файлы платы (как WSL)
+Browse files, download, upload	Обзор, скачать, загрузить
+Board status	Состояние платы
+Temperature, load, memory, disk	Температура, нагрузка, память, диск
+Open terminal	Открыть терминал
+A shell on the board	Оболочка на плате
+Reboot / Shutdown	Перезагрузка / выкл.
+Always asks first	Всегда спрашивает
+Network info	Сеть
+IP, Wi-Fi, DNS, internet test	IP, Wi-Fi, DNS, тест интернета
+Update packages	Обновление пакетов
+Check or install updates	Проверить или установить
+No apt, dnf or pacman found	apt, dnf и pacman не найдены
+Services	Службы
+Start, stop, restart	Запуск, остановка, перезапуск
+Not available: needs systemd	Недоступно: нужен systemd
+Run command	Выполнить команду
+One command, see the output	Одна команда и её вывод
+Processes	Процессы
+CPU / RAM list, stop a program	CPU / RAM, остановка программ
+Not available: ps not found	Недоступно: ps не найден
+Containers: start, stop, logs	Контейнеры: запуск, стоп, логи
+Logs	Журналы
+System log, errors, kernel	Журнал, ошибки, ядро
+Port forwarding	Проброс портов
+Board port -> this PC	Порт платы -> этот ПК
+System config	Настройка системы
+Not available: only on Armbian or DietPi	Недоступно: только Armbian или DietPi
+Hardware info	Оборудование
+Model, CPU, temperatures, clocks	Модель, CPU, температуры, частоты
+Storage / NVMe	Накопители / NVMe
+Disks, usage, SMART health	Диски, место, состояние SMART
+Backup	Резервная копия
+Save a folder as .tar.gz on this PC	Папка в .tar.gz на этом ПК
+Add the "opi" command to cmd / PowerShell	Добавить команду «opi» в cmd / PowerShell
+Then type  opi  in any cmd or PowerShell window to open the board, like  wsl  - even when this app is closed. Nothing is installed on the board.	Затем введите  opi  в любом окне cmd или PowerShell, чтобы открыть плату, как  wsl  - даже когда приложение закрыто. На плату ничего не устанавливается.
+Not installed - click to install	Не установлен - нажмите для установки
+Armbian config	Настройка Armbian
+DietPi config	Настройка DietPi
+The board at * has a new identity (normal after burning a new card).	Плата по адресу {0} имеет новый идентификатор (это нормально после записи новой карты).
+Forget the old saved key of this IP and continue?	Забыть старый сохранённый ключ этого IP и продолжить?
+First time on this board: Orange Pi Link needs a login key (made only for this app).	Первое подключение к этой плате: Orange Pi Link нужен ключ входа (создаётся только для этого приложения).
+A black window will open. Type the password of user "*" on the board there (the letters are not shown) and press Enter. The window closes by itself. Your password is not seen or saved by this app.	Откроется чёрное окно. Введите в нём пароль пользователя «{0}» на плате (символы не отображаются) и нажмите Enter. Окно закроется само. Приложение не видит и не сохраняет ваш пароль.
+The board did not accept the login. The password may have been wrong. Try again.	Плата не приняла вход. Возможно, пароль неверный. Попробуйте ещё раз.
+Type the IP address of the board, for example 192.168.1.6	Введите IP-адрес платы, например 192.168.1.6
+Only an address on your own network can be used (10.x, 172.16-31.x, 192.168.x)	Можно использовать только адрес из вашей сети (10.x, 172.16-31.x, 192.168.x)
+Only an address on your own network can be opened	Можно открыть только адрес из вашей сети
+The user name can only have lowercase letters, digits, _ and -	Имя пользователя может содержать только строчные буквы, цифры, _ и -
+The board did not answer in time.	Плата не ответила вовремя.
+Could not make the key: *	Не удалось создать ключ: {0}
+ssh.exe was not found. Turn on the Windows feature "OpenSSH Client" (Settings > Apps > Optional features).	ssh.exe не найден. Включите компонент Windows «Клиент OpenSSH» (Параметры > Приложения > Дополнительные компоненты).
+This PC is not connected to a private network (Wi-Fi or Ethernet). Connect it to the same modem as the Orange Pi.	Этот ПК не подключён к частной сети (Wi-Fi или Ethernet). Подключите его к тому же роутеру, что и Orange Pi.
+Cancelled by user	Отменено пользователем
+Check for updates	Проверить обновления
+Install updates	Установить обновления
+Install all available updates on the board now?	Установить все доступные обновления на плату сейчас?
+This can take several minutes. Do not switch the board off while it runs. Some updates need a reboot afterwards.	Это может занять несколько минут. Не выключайте плату во время работы. Некоторым обновлениям потом нужна перезагрузка.
+An update is still running. Closing this window stops it half-way, which can leave packages broken.	Обновление ещё выполняется. Если закрыть окно, оно прервётся на полпути, и пакеты могут сломаться.
+Close anyway?	Всё равно закрыть?
+System log (last 300 lines)	Системный журнал (последние 300 строк)
+Errors since boot	Ошибки с момента загрузки
+SSH logins (last 100)	Входы по SSH (последние 100)
+Follow live (press Stop to end)	В реальном времени (Стоп - завершить)
+Kernel messages (dmesg)	Сообщения ядра (dmesg)
+Install Docker	Установить Docker
+Install again	Повторить
+Docker is not installed on the board, and this system has no apt, dnf or pacman, so it cannot be installed from here.	Docker не установлен на плате, а в этой системе нет apt, dnf или pacman, поэтому отсюда его не установить.
+Docker is not installed on the board.	Docker не установлен на плате.
+Install it now?	Установить сейчас?
+It is installed with the system package manager (*). The board needs internet and it takes a few minutes.	Устанавливается системным менеджером пакетов ({0}). Плате нужен интернет; это займёт несколько минут.
+The installation is still running. Closing this window stops it half-way.	Установка ещё выполняется. Если закрыть окно, она прервётся на полпути.
+Start the service * on the board?	Запустить службу {0} на плате?
+Stop the service * on the board?	Остановить службу {0} на плате?
+Restart the service * on the board?	Перезапустить службу {0} на плате?
+Warning: this service may keep the board reachable (network or login). Stopping it can cut your connection.	Внимание: эта служба может обеспечивать доступ к плате (сеть или вход). Её остановка может разорвать соединение.
+Stop process * (*)?	Остановить процесс {0} ({1})?
+Force kill process * (*)?	Принудительно завершить процесс {0} ({1})?
+Unsaved work in that program is lost.	Несохранённые данные в этой программе будут потеряны.
+Warning: this looks like a system or login process. Stopping it can cut your connection.	Внимание: похоже, это системный процесс или процесс входа. Его остановка может разорвать соединение.
+Stop the container *?	Остановить контейнер {0}?
+Restart the container *?	Перезапустить контейнер {0}?
+Service	Служба
+State	Состояние
+Starts at boot	Запуск при загрузке
+PID	PID
+CPU %	CPU %
+Mem %	Память %
+Running	Время работы
+Command	Команда
+Container	Контейнер
+Image	Образ
+Status	Статус
+Ports	Порты
+Name	Имя
+Size	Размер
+Modified	Изменён
+Start	Запуск
+Stop	Стоп
+Restart	Перезапуск
+Details	Подробнее
+Stop (ask nicely)	Стоп (мягко)
+Force kill	Принудительно
+Filter	Фильтр
+Refresh every * s	Обновлять каждые {0} с
+Loading...	Загрузка...
+This cannot be done for the selected row.	Для выбранной строки это невозможно.
+Run again	Повторить
+Run	Запуск
+Refresh	Обновить
+Copy	Копировать
+Cancel	Отмена
+Home	Домой
+Terminal here	Терминал здесь
+Download selected	Скачать выбранное
+Upload file here	Загрузить сюда
+The path must start with /	Путь должен начинаться с /
+Looking for the home folder...	Поиск домашней папки...
+Loading * ...	Загрузка {0} ...
+* items - updated *	Элементов: {0} - обновлено {1}
+* items	Элементов: {0}
+Save the folder as a .tar file	Сохранить папку как .tar
+Save file	Сохранить файл
+Downloading *  * of *	Скачивание {0}  {1} из {2}
+Downloading *  *	Скачивание {0}  {1}
+Download failed: *	Не удалось скачать: {0}
+Choose a file to send to *	Выберите файл для отправки в {0}
+This file name cannot be sent.	Это имя файла нельзя отправить.
+A folder named "*" already exists here.	Папка с именем «{0}» уже существует здесь.
+* named "*" is already on the board in *.	{0} с именем «{1}» уже есть на плате в {2}.
+A folder	Папка
+A file	Файл
+Replace it?	Заменить?
+Uploading *  * of *	Загрузка {0}  {1} из {2}
+Upload failed: *	Не удалось загрузить: {0}
+Sent * to *	{0} отправлен в {1}
+Saves one folder of the board as a .tar.gz file on this PC. The folder is only read, nothing is changed on the board.	Сохраняет одну папку платы как файл .tar.gz на этом ПК. Папка только читается, на плате ничего не меняется.
+Folder on board	Папка на плате
+Also read files that only root can read (uses sudo; needs passwordless sudo)	Читать также файлы, доступные только root (через sudo; нужен sudo без пароля)
+Choose file and start	Выбрать файл и начать
+A backup is running. Stop it and delete the unfinished file?	Идёт резервное копирование. Остановить и удалить незавершённый файл?
+The folder must start with /	Папка должна начинаться с /
+Pick a folder below /, for example /home or /etc.	Выберите папку внутри /, например /home или /etc.
+This folder name cannot be used.	Это имя папки использовать нельзя.
+Save the backup as	Сохранить резервную копию как
+Backing up *   * saved so far	Копирование {0}   сохранено {1}
+Backing up * ...	Копирование {0} ...
+Cancelled.	Отменено.
+Some files changed while they were read. The backup was made, but those files may be inconsistent.	Некоторые файлы изменились во время чтения. Копия создана, но эти файлы могут быть несогласованными.
+Backup failed: *	Резервное копирование не удалось: {0}
+Saved * to *\nSome files changed while they were read. The backup was made, but those files may be inconsistent.	Сохранено {0} в {1}\nНекоторые файлы изменились во время чтения. Копия создана, но эти файлы могут быть несогласованными.
+Saved * to *	Сохранено {0} в {1}
+Shows a port of the board on this PC. Example: a web page on board port 8080 opens at http://127.0.0.1:8080 here. Only this PC can use it, and only while this window is open.	Показывает порт платы на этом ПК. Пример: веб-страница на порту 8080 платы открывается здесь по адресу http://127.0.0.1:8080. Доступно только на этом ПК и только пока окно открыто.
+Port on the board	Порт на плате
+Port on this PC	Порт на этом ПК
+Open in browser	Открыть в браузере
+Forwarding stopped.	Проброс остановлен.
+Forwarding stopped. *	Проброс остановлен. {0}
+ssh.exe was not found.	ssh.exe не найден.
+Stopped.	Остановлено.
+A port is a number from 1 to 65535.	Порт - это число от 1 до 65535.
+Port * is already used on this PC. Pick another one.	Порт {0} на этом ПК уже занят. Выберите другой.
+Starting...	Запуск...
+Could not start: *	Не удалось запустить: {0}
+Running: http://127.0.0.1:*  ->  board port *. Close this window or press Stop to end it.	Работает: http://127.0.0.1:{0}  ->  порт платы {1}. Закройте окно или нажмите «Стоп», чтобы завершить.
+Both buttons ask before they do anything. Everything running on the board stops.	Обе кнопки сначала спрашивают подтверждение. Всё, что работает на плате, остановится.
+Reboot	Перезагрузить
+Shut down	Выключить
+Reboot the board now?	Перезагрузить плату сейчас?
+It is back in about a minute.	Она вернётся примерно через минуту.
+Shut the board down now?	Выключить плату сейчас?
+To use it again you must switch its power on yourself.	Чтобы снова использовать её, нужно самому включить питание.
+Sending the command...	Отправка команды...
+Not done: *	Не выполнено: {0}
+Waiting for the board to go offline...	Ожидание отключения платы...
+The board is still answering. The command may not have worked.	Плата всё ещё отвечает. Возможно, команда не сработала.
+The board is off (*).	Плата выключена ({0}).
+The board is restarting. Waiting for it to come back...	Плата перезагружается. Ожидание возвращения...
+The board is back online (*).	Плата снова в сети ({0}).
+The board did not come back within 4 minutes. Check it.	Плата не вернулась за 4 минуты. Проверьте её.
+Copied.	Скопировано.
+Type one command and press Enter. Programs that wait for keys (nano, top) do not work here - use Open terminal.	Введите одну команду и нажмите Enter. Программы, ждущие нажатий клавиш (nano, top), здесь не работают - используйте «Открыть терминал».
+Type a command first.	Сначала введите команду.
+Running...	Выполняется...
+Finished with code * (see the text above).	Завершено с кодом {0} (см. текст выше).
+Finished *	Завершено {0}
+Stopped: it took too long.	Остановлено: заняло слишком много времени.
+Could not connect to the board.	Не удалось подключиться к плате.
+This needs root. Log in as root, or give this user passwordless sudo on the board.	Нужны права root. Войдите как root или дайте этому пользователю sudo без пароля на плате.
+Refresh every 5 seconds	Обновлять каждые 5 секунд
+Updated *	Обновлено {0}
+System	Система
+Kernel	Ядро
+IP address	IP-адрес
+Uptime	Время работы
+Load (1 / 5 / 15 min)	Нагрузка (1 / 5 / 15 мин)
+Memory used	Использовано памяти
+CPU temperature	Температура CPU
+Drives found	Найдено накопителей
+The command "opi" is already set up on this PC.	Команда «opi» уже настроена на этом ПК.
+Yes = update it to *@*\nNo = remove it\nCancel = do nothing	Да = обновить на {0}@{1}\nНет = удалить\nОтмена = ничего не делать
+The command "opi" was removed.	Команда «opi» удалена.
+Add the command "opi" to Windows?	Добавить команду «opi» в Windows?
+After this, typing  opi  in any cmd or PowerShell window opens a shell on *@* - like typing  wsl  - even when Orange Pi Link is closed.	После этого ввод  opi  в любом окне cmd или PowerShell открывает оболочку на {0}@{1} - как  wsl  - даже когда Orange Pi Link закрыт.
+What is added: a small file opi.cmd in\n*\nand that folder in your user PATH (no admin needed). Nothing is installed on the board.	Что добавляется: небольшой файл opi.cmd в\n{0}\nи эта папка в PATH вашего пользователя (права администратора не нужны). На плату ничего не устанавливается.
+If the board's IP changes, press this button again.	Если IP платы изменится, нажмите эту кнопку снова.
+Done. Open a NEW cmd or PowerShell window and type:	Готово. Откройте НОВОЕ окно cmd или PowerShell и введите:
+Words after it run one command on the board, for example:  opi ls /	Слова после неё выполняются как одна команда на плате, например:  opi ls /
+Could not open the user environment settings.	Не удалось открыть переменные среды пользователя.
+Storage	Накопители
+Board files	Файлы платы
+Docker	Docker
+Network info - *	Сеть - {0}
+Hardware info - *	Оборудование - {0}
+Storage - *	Накопители - {0}
+Run command - *	Выполнить команду - {0}
+Update packages - *	Обновление пакетов - {0}
+Logs - *	Журналы - {0}
+Install Docker - *	Установить Docker - {0}
+Services - *	Службы - {0}
+Processes - *	Процессы - {0}
+Docker - *	Docker - {0}
+Board status - *	Состояние платы - {0}
+Board files - *	Файлы платы - {0}
+Port forwarding - *	Проброс портов - {0}
+Backup - *	Резервная копия - {0}
+Reboot / Shutdown - *	Перезагрузка / выкл. - {0}
+Stop (ask nicely) * ...	Стоп (мягко) {0} ...
+Stop (ask nicely) * failed: *	Стоп (мягко) {0}: не удалось: {1}
+Stop (ask nicely) * failed:	Стоп (мягко) {0}: не удалось:
+Stop (ask nicely) * done.	Стоп (мягко) {0}: готово.
+Force kill * ...	Принудительно {0} ...
+Force kill * failed: *	Принудительно {0}: не удалось: {1}
+Force kill * failed:	Принудительно {0}: не удалось:
+Force kill * done.	Принудительно {0}: готово.
+Start * ...	Запуск {0} ...
+Start * failed: *	Запуск {0}: не удалось: {1}
+Start * failed:	Запуск {0}: не удалось:
+Start * done.	Запуск {0}: готово.
+Stop * ...	Стоп {0} ...
+Stop * failed: *	Стоп {0}: не удалось: {1}
+Stop * failed:	Стоп {0}: не удалось:
+Stop * done.	Стоп {0}: готово.
+Restart * ...	Перезапуск {0} ...
+Restart * failed: *	Перезапуск {0}: не удалось: {1}
+Restart * failed:	Перезапуск {0}: не удалось:
+Restart * done.	Перезапуск {0}: готово.
+Details * - *	Подробнее {0} - {1}
+Logs * - *	Журналы {0} - {1}

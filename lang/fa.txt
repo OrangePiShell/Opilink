@@ -1,0 +1,267 @@
+# Orange Pi Link translation. Format: English text<TAB>translation
+# "*" in the English text matches any text; {0}, {1} in the translation put it back. \n = new line.
+Board IP	آی‌پی برد
+User	کاربر
+Find board on my network	پیدا کردن برد در شبکه
+Connect and check the board	اتصال و بررسی برد
+Type the IP of the board, or press "Find board".	آی‌پی برد را بنویسید یا «پیدا کردن برد» را بزنید.
+Login uses a key made only for this app. No password is stored.	ورود با کلیدی انجام می‌شود که فقط برای این برنامه ساخته شده است. هیچ رمزی ذخیره نمی‌شود.
+Searching your network...	در حال جستجوی شبکه...
+Searching your network... *%	در حال جستجوی شبکه... {0}%
+No board found. Check that it is on and on the same modem, or type the IP.	برد پیدا نشد. مطمئن شوید روشن است و به همان مودم وصل است، یا آی‌پی را بنویسید.
+Found the board: *\n* devices have SSH open; the first one was picked.	برد پیدا شد: {0}\n{1} دستگاه SSH باز دارند؛ اولین مورد انتخاب شد.
+Found a device with SSH (not sure it is the board): *\n* devices have SSH open; the first one was picked.	دستگاهی با SSH پیدا شد (مطمئن نیستم برد باشد): {0}\n{1} دستگاه SSH باز دارند؛ اولین مورد انتخاب شد.
+Found the board: *	برد پیدا شد: {0}
+Found a device with SSH (not sure it is the board): *	دستگاهی با SSH پیدا شد (مطمئن نیستم برد باشد): {0}
+Search failed: *	جستجو ناموفق بود: {0}
+Press "Connect and check the board" (or any tool).	«اتصال و بررسی برد» (یا هر ابزار) را بزنید.
+Connected to *	متصل به {0}
+System not detected - all tools stay enabled	سیستم شناسایی نشد - همه ابزارها فعال می‌مانند
+View board like WSL	مشاهده برد مثل WSL
+Browse files, download, upload	مرور فایل‌ها، دانلود، آپلود
+Board status	وضعیت برد
+Temperature, load, memory, disk	دما، بار، حافظه، دیسک
+Open terminal	باز کردن ترمینال
+A shell on the board	یک شل روی برد
+Reboot / Shutdown	ری‌استارت / خاموش
+Always asks first	همیشه اول می‌پرسد
+Network info	اطلاعات شبکه
+IP, Wi-Fi, DNS, internet test	آی‌پی، وای‌فای، DNS، تست اینترنت
+Update packages	به‌روزرسانی بسته‌ها
+Check or install updates	بررسی یا نصب به‌روزرسانی
+No apt, dnf or pacman found	apt، dnf یا pacman پیدا نشد
+Services	سرویس‌ها
+Start, stop, restart	شروع، توقف، راه‌اندازی مجدد
+Not available: needs systemd	در دسترس نیست: به systemd نیاز دارد
+Run command	اجرای دستور
+One command, see the output	یک دستور، دیدن خروجی
+Processes	پردازش‌ها
+CPU / RAM list, stop a program	فهرست CPU / RAM، توقف برنامه
+Not available: ps not found	در دسترس نیست: ps پیدا نشد
+Containers: start, stop, logs	کانتینرها: شروع، توقف، لاگ
+Logs	لاگ‌ها
+System log, errors, kernel	لاگ سیستم، خطاها، کرنل
+Port forwarding	انتقال پورت
+Board port -> this PC	پورت برد -> این رایانه
+System config	تنظیمات سیستم
+Not available: only on Armbian or DietPi	در دسترس نیست: فقط روی Armbian یا DietPi
+Hardware info	اطلاعات سخت‌افزار
+Model, CPU, temperatures, clocks	مدل، CPU، دما، فرکانس
+Storage / NVMe	ذخیره‌سازی / NVMe
+Disks, usage, SMART health	دیسک‌ها، مصرف، سلامت SMART
+Backup	پشتیبان‌گیری
+Save a folder as .tar.gz on this PC	ذخیره پوشه به‌صورت .tar.gz روی این رایانه
+Add the "opi" command to cmd / PowerShell	افزودن دستور «opi» به cmd / PowerShell
+Then type  opi  in any cmd or PowerShell window to open the board, like  wsl  - even when this app is closed. Nothing is installed on the board.	سپس در هر پنجره cmd یا PowerShell عبارت  opi  را بنویسید تا برد باز شود، مثل  wsl  - حتی وقتی این برنامه بسته است. چیزی روی برد نصب نمی‌شود.
+Not installed - click to install	نصب نیست - برای نصب کلیک کنید
+Armbian config	تنظیمات Armbian
+DietPi config	تنظیمات DietPi
+The board at * has a new identity (normal after burning a new card).	برد در {0} هویت جدیدی دارد (بعد از رایت کارت جدید عادی است).
+Forget the old saved key of this IP and continue?	کلید قدیمی ذخیره‌شده‌ی این آی‌پی فراموش شود و ادامه دهیم؟
+First time on this board: Orange Pi Link needs a login key (made only for this app).	اولین بار روی این برد: Orange Pi Link به یک کلید ورود نیاز دارد (فقط برای این برنامه ساخته می‌شود).
+A black window will open. Type the password of user "*" on the board there (the letters are not shown) and press Enter. The window closes by itself. Your password is not seen or saved by this app.	یک پنجره‌ی سیاه باز می‌شود. رمز کاربر «{0}» برد را همان‌جا بنویسید (حروف نشان داده نمی‌شوند) و Enter بزنید. پنجره خودش بسته می‌شود. رمز شما توسط این برنامه دیده یا ذخیره نمی‌شود.
+The board did not accept the login. The password may have been wrong. Try again.	برد ورود را نپذیرفت. شاید رمز اشتباه بوده است. دوباره تلاش کنید.
+Type the IP address of the board, for example 192.168.1.6	آی‌پی برد را بنویسید، مثلاً 192.168.1.6
+Only an address on your own network can be used (10.x, 172.16-31.x, 192.168.x)	فقط آدرس داخل شبکه‌ی خودتان قابل استفاده است (10.x، 172.16-31.x، 192.168.x)
+Only an address on your own network can be opened	فقط آدرس داخل شبکه‌ی خودتان قابل باز شدن است
+The user name can only have lowercase letters, digits, _ and -	نام کاربری فقط می‌تواند حروف کوچک انگلیسی، رقم، _ و - داشته باشد
+The board did not answer in time.	برد به موقع پاسخ نداد.
+Could not make the key: *	ساخت کلید ممکن نشد: {0}
+ssh.exe was not found. Turn on the Windows feature "OpenSSH Client" (Settings > Apps > Optional features).	ssh.exe پیدا نشد. ویژگی ویندوز «OpenSSH Client» را روشن کنید (Settings > Apps > Optional features).
+This PC is not connected to a private network (Wi-Fi or Ethernet). Connect it to the same modem as the Orange Pi.	این رایانه به شبکه‌ی خصوصی (وای‌فای یا اترنت) وصل نیست. آن را به همان مودمی وصل کنید که Orange Pi به آن وصل است.
+Cancelled by user	توسط کاربر لغو شد
+Check for updates	بررسی به‌روزرسانی‌ها
+Install updates	نصب به‌روزرسانی‌ها
+Install all available updates on the board now?	همه‌ی به‌روزرسانی‌های موجود الان روی برد نصب شوند؟
+This can take several minutes. Do not switch the board off while it runs. Some updates need a reboot afterwards.	ممکن است چند دقیقه طول بکشد. در حین کار برد را خاموش نکنید. بعضی به‌روزرسانی‌ها بعدش ری‌استارت لازم دارند.
+An update is still running. Closing this window stops it half-way, which can leave packages broken.	یک به‌روزرسانی هنوز در حال اجراست. بستن این پنجره آن را نیمه‌کاره متوقف می‌کند و ممکن است بسته‌ها خراب شوند.
+Close anyway?	با این حال بسته شود؟
+System log (last 300 lines)	لاگ سیستم (۳۰۰ خط آخر)
+Errors since boot	خطاها از زمان بوت
+SSH logins (last 100)	ورودهای SSH (۱۰۰ مورد آخر)
+Follow live (press Stop to end)	دنبال کردن زنده (برای پایان Stop بزنید)
+Kernel messages (dmesg)	پیام‌های کرنل (dmesg)
+Install Docker	نصب Docker
+Install again	نصب دوباره
+Docker is not installed on the board, and this system has no apt, dnf or pacman, so it cannot be installed from here.	Docker روی برد نصب نیست و این سیستم apt، dnf یا pacman ندارد، پس از اینجا قابل نصب نیست.
+Docker is not installed on the board.	Docker روی برد نصب نیست.
+Install it now?	الان نصب شود؟
+It is installed with the system package manager (*). The board needs internet and it takes a few minutes.	با مدیر بسته‌ی سیستم ({0}) نصب می‌شود. برد به اینترنت نیاز دارد و چند دقیقه طول می‌کشد.
+The installation is still running. Closing this window stops it half-way.	نصب هنوز در حال اجراست. بستن این پنجره آن را نیمه‌کاره متوقف می‌کند.
+Start the service * on the board?	سرویس {0} روی برد شروع شود؟
+Stop the service * on the board?	سرویس {0} روی برد متوقف شود؟
+Restart the service * on the board?	سرویس {0} روی برد دوباره راه‌اندازی شود؟
+Warning: this service may keep the board reachable (network or login). Stopping it can cut your connection.	هشدار: این سرویس ممکن است دسترسی به برد را حفظ کند (شبکه یا ورود). متوقف کردن آن می‌تواند اتصال شما را قطع کند.
+Stop process * (*)?	پردازش {0} ({1}) متوقف شود؟
+Force kill process * (*)?	پردازش {0} ({1}) به‌زور بسته شود؟
+Unsaved work in that program is lost.	کارهای ذخیره‌نشده‌ی آن برنامه از بین می‌رود.
+Warning: this looks like a system or login process. Stopping it can cut your connection.	هشدار: این به نظر یک پردازش سیستمی یا ورود می‌رسد. متوقف کردن آن می‌تواند اتصال شما را قطع کند.
+Stop the container *?	کانتینر {0} متوقف شود؟
+Restart the container *?	کانتینر {0} دوباره راه‌اندازی شود؟
+Service	سرویس
+State	وضعیت
+Starts at boot	شروع هنگام بوت
+PID	PID
+CPU %	CPU %
+Mem %	حافظه %
+Running	زمان اجرا
+Command	دستور
+Container	کانتینر
+Image	ایمیج
+Status	وضعیت
+Ports	پورت‌ها
+Name	نام
+Size	اندازه
+Modified	تغییر یافته
+Start	شروع
+Stop	توقف
+Restart	راه‌اندازی مجدد
+Details	جزئیات
+Stop (ask nicely)	توقف (مؤدبانه)
+Force kill	بستن اجباری
+Filter	فیلتر
+Refresh every * s	تازه‌سازی هر {0} ثانیه
+Loading...	در حال بارگذاری...
+This cannot be done for the selected row.	این کار برای ردیف انتخاب‌شده ممکن نیست.
+Run again	اجرای دوباره
+Run	اجرا
+Refresh	تازه‌سازی
+Copy	کپی
+Cancel	لغو
+Home	خانه
+Terminal here	ترمینال اینجا
+Download selected	دانلود موارد انتخاب‌شده
+Upload file here	آپلود فایل به اینجا
+The path must start with /	مسیر باید با / شروع شود
+Looking for the home folder...	در حال یافتن پوشه‌ی خانه...
+Loading * ...	در حال بارگذاری {0} ...
+* items - updated *	{0} مورد - به‌روز شد {1}
+* items	{0} مورد
+Save the folder as a .tar file	ذخیره‌ی پوشه به‌صورت فایل .tar
+Save file	ذخیره‌ی فایل
+Downloading *  * of *	در حال دانلود {0}  {1} از {2}
+Downloading *  *	در حال دانلود {0}  {1}
+Download failed: *	دانلود ناموفق بود: {0}
+Choose a file to send to *	فایلی برای ارسال به {0} انتخاب کنید
+This file name cannot be sent.	این نام فایل قابل ارسال نیست.
+A folder named "*" already exists here.	پوشه‌ای با نام «{0}» از قبل اینجا وجود دارد.
+* named "*" is already on the board in *.	{0} با نام «{1}» از قبل روی برد در {2} وجود دارد.
+A folder	یک پوشه
+A file	یک فایل
+Replace it?	جایگزین شود؟
+Uploading *  * of *	در حال آپلود {0}  {1} از {2}
+Upload failed: *	آپلود ناموفق بود: {0}
+Sent * to *	{0} به {1} ارسال شد
+Saves one folder of the board as a .tar.gz file on this PC. The folder is only read, nothing is changed on the board.	یک پوشه‌ی برد را به‌صورت فایل .tar.gz روی این رایانه ذخیره می‌کند. پوشه فقط خوانده می‌شود و چیزی روی برد تغییر نمی‌کند.
+Folder on board	پوشه روی برد
+Also read files that only root can read (uses sudo; needs passwordless sudo)	فایل‌هایی را که فقط root می‌تواند بخواند هم بخوان (از sudo استفاده می‌کند؛ sudo بدون رمز لازم است)
+Choose file and start	انتخاب فایل و شروع
+A backup is running. Stop it and delete the unfinished file?	پشتیبان‌گیری در حال اجراست. متوقف شود و فایل ناتمام حذف شود؟
+The folder must start with /	پوشه باید با / شروع شود
+Pick a folder below /, for example /home or /etc.	پوشه‌ای زیر / انتخاب کنید، مثلاً /home یا /etc.
+This folder name cannot be used.	این نام پوشه قابل استفاده نیست.
+Save the backup as	ذخیره‌ی پشتیبان با نام
+Backing up *   * saved so far	در حال پشتیبان‌گیری از {0}   تاکنون {1} ذخیره شده
+Backing up * ...	در حال پشتیبان‌گیری از {0} ...
+Cancelled.	لغو شد.
+Some files changed while they were read. The backup was made, but those files may be inconsistent.	بعضی فایل‌ها هنگام خواندن تغییر کردند. پشتیبان ساخته شد ولی آن فایل‌ها ممکن است ناهمخوان باشند.
+Backup failed: *	پشتیبان‌گیری ناموفق بود: {0}
+Saved * to *\nSome files changed while they were read. The backup was made, but those files may be inconsistent.	{0} در {1} ذخیره شد\nبعضی فایل‌ها هنگام خواندن تغییر کردند. پشتیبان ساخته شد ولی آن فایل‌ها ممکن است ناهمخوان باشند.
+Saved * to *	{0} در {1} ذخیره شد
+Shows a port of the board on this PC. Example: a web page on board port 8080 opens at http://127.0.0.1:8080 here. Only this PC can use it, and only while this window is open.	یک پورت برد را روی این رایانه نشان می‌دهد. مثال: صفحه‌ی وبی که روی پورت 8080 برد است اینجا در http://127.0.0.1:8080 باز می‌شود. فقط همین رایانه می‌تواند از آن استفاده کند و فقط تا وقتی این پنجره باز است.
+Port on the board	پورت روی برد
+Port on this PC	پورت روی این رایانه
+Open in browser	باز کردن در مرورگر
+Forwarding stopped.	انتقال متوقف شد.
+Forwarding stopped. *	انتقال متوقف شد. {0}
+ssh.exe was not found.	ssh.exe پیدا نشد.
+Stopped.	متوقف شد.
+A port is a number from 1 to 65535.	پورت عددی از ۱ تا ۶۵۵۳۵ است.
+Port * is already used on this PC. Pick another one.	پورت {0} روی این رایانه قبلاً استفاده شده است. پورت دیگری انتخاب کنید.
+Starting...	در حال شروع...
+Could not start: *	شروع نشد: {0}
+Running: http://127.0.0.1:*  ->  board port *. Close this window or press Stop to end it.	در حال اجرا: http://127.0.0.1:{0}  ->  پورت {1} برد. برای پایان این پنجره را ببندید یا Stop بزنید.
+Both buttons ask before they do anything. Everything running on the board stops.	هر دو دکمه قبل از انجام کار می‌پرسند. هر چیزی که روی برد اجراست متوقف می‌شود.
+Reboot	ری‌استارت
+Shut down	خاموش کردن
+Reboot the board now?	برد الان ری‌استارت شود؟
+It is back in about a minute.	حدود یک دقیقه بعد برمی‌گردد.
+Shut the board down now?	برد الان خاموش شود؟
+To use it again you must switch its power on yourself.	برای استفاده‌ی دوباره باید خودتان برق آن را روشن کنید.
+Sending the command...	در حال ارسال دستور...
+Not done: *	انجام نشد: {0}
+Waiting for the board to go offline...	در انتظار آفلاین شدن برد...
+The board is still answering. The command may not have worked.	برد هنوز پاسخ می‌دهد. شاید دستور اجرا نشده باشد.
+The board is off (*).	برد خاموش است ({0}).
+The board is restarting. Waiting for it to come back...	برد در حال ری‌استارت است. در انتظار بازگشت...
+The board is back online (*).	برد دوباره آنلاین شد ({0}).
+The board did not come back within 4 minutes. Check it.	برد در ۴ دقیقه برنگشت. آن را بررسی کنید.
+Copied.	کپی شد.
+Type one command and press Enter. Programs that wait for keys (nano, top) do not work here - use Open terminal.	یک دستور بنویسید و Enter بزنید. برنامه‌هایی که منتظر کلید می‌مانند (nano، top) اینجا کار نمی‌کنند - از «باز کردن ترمینال» استفاده کنید.
+Type a command first.	اول یک دستور بنویسید.
+Running...	در حال اجرا...
+Finished with code * (see the text above).	با کد {0} تمام شد (متن بالا را ببینید).
+Finished *	تمام شد {0}
+Stopped: it took too long.	متوقف شد: خیلی طول کشید.
+Could not connect to the board.	اتصال به برد ممکن نشد.
+This needs root. Log in as root, or give this user passwordless sudo on the board.	این کار به root نیاز دارد. با root وارد شوید یا به این کاربر روی برد sudo بدون رمز بدهید.
+Refresh every 5 seconds	تازه‌سازی هر ۵ ثانیه
+Updated *	به‌روز شد {0}
+System	سیستم
+Kernel	کرنل
+IP address	آدرس IP
+Uptime	مدت روشن بودن
+Load (1 / 5 / 15 min)	بار (۱ / ۵ / ۱۵ دقیقه)
+Memory used	حافظه‌ی مصرفی
+CPU temperature	دمای CPU
+Drives found	درایوهای یافت‌شده
+The command "opi" is already set up on this PC.	دستور «opi» از قبل روی این رایانه تنظیم شده است.
+Yes = update it to *@*\nNo = remove it\nCancel = do nothing	بله = به {0}@{1} به‌روز شود\nخیر = حذف شود\nلغو = هیچ کاری نشود
+The command "opi" was removed.	دستور «opi» حذف شد.
+Add the command "opi" to Windows?	دستور «opi» به ویندوز اضافه شود؟
+After this, typing  opi  in any cmd or PowerShell window opens a shell on *@* - like typing  wsl  - even when Orange Pi Link is closed.	بعد از این، نوشتن  opi  در هر پنجره cmd یا PowerShell یک شل روی {0}@{1} باز می‌کند - مثل نوشتن  wsl  - حتی وقتی Orange Pi Link بسته است.
+What is added: a small file opi.cmd in\n*\nand that folder in your user PATH (no admin needed). Nothing is installed on the board.	چه چیزی اضافه می‌شود: یک فایل کوچک opi.cmd در\n{0}\nو همان پوشه در PATH کاربر شما (بدون نیاز به ادمین). چیزی روی برد نصب نمی‌شود.
+If the board's IP changes, press this button again.	اگر آی‌پی برد عوض شد، دوباره این دکمه را بزنید.
+Done. Open a NEW cmd or PowerShell window and type:	انجام شد. یک پنجره‌ی جدید cmd یا PowerShell باز کنید و بنویسید:
+Words after it run one command on the board, for example:  opi ls /	کلمات بعد از آن یک دستور را روی برد اجرا می‌کنند، مثلاً:  opi ls /
+Could not open the user environment settings.	تنظیمات محیطی کاربر باز نشد.
+Storage	ذخیره‌سازی
+Board files	فایل‌های برد
+Docker	Docker
+Network info - *	اطلاعات شبکه - {0}
+Hardware info - *	اطلاعات سخت‌افزار - {0}
+Storage - *	ذخیره‌سازی - {0}
+Run command - *	اجرای دستور - {0}
+Update packages - *	به‌روزرسانی بسته‌ها - {0}
+Logs - *	لاگ‌ها - {0}
+Install Docker - *	نصب Docker - {0}
+Services - *	سرویس‌ها - {0}
+Processes - *	پردازش‌ها - {0}
+Docker - *	Docker - {0}
+Board status - *	وضعیت برد - {0}
+Board files - *	فایل‌های برد - {0}
+Port forwarding - *	انتقال پورت - {0}
+Backup - *	پشتیبان‌گیری - {0}
+Reboot / Shutdown - *	ری‌استارت / خاموش - {0}
+Stop (ask nicely) * ...	توقف (مؤدبانه) {0} ...
+Stop (ask nicely) * failed: *	توقف (مؤدبانه) {0} ناموفق بود: {1}
+Stop (ask nicely) * failed:	توقف (مؤدبانه) {0} ناموفق بود:
+Stop (ask nicely) * done.	توقف (مؤدبانه) {0} انجام شد.
+Force kill * ...	بستن اجباری {0} ...
+Force kill * failed: *	بستن اجباری {0} ناموفق بود: {1}
+Force kill * failed:	بستن اجباری {0} ناموفق بود:
+Force kill * done.	بستن اجباری {0} انجام شد.
+Start * ...	شروع {0} ...
+Start * failed: *	شروع {0} ناموفق بود: {1}
+Start * failed:	شروع {0} ناموفق بود:
+Start * done.	شروع {0} انجام شد.
+Stop * ...	توقف {0} ...
+Stop * failed: *	توقف {0} ناموفق بود: {1}
+Stop * failed:	توقف {0} ناموفق بود:
+Stop * done.	توقف {0} انجام شد.
+Restart * ...	راه‌اندازی مجدد {0} ...
+Restart * failed: *	راه‌اندازی مجدد {0} ناموفق بود: {1}
+Restart * failed:	راه‌اندازی مجدد {0} ناموفق بود:
+Restart * done.	راه‌اندازی مجدد {0} انجام شد.
+Details * - *	جزئیات {0} - {1}
+Logs * - *	لاگ‌ها {0} - {1}
