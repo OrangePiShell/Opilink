@@ -1,0 +1,1 @@
+Orange Pi Link 1.0.0 (16 tools: files, status, terminal, power, network, update, services, run, processes, docker, logs, port forwarding, system config, hardware, storage, backup)

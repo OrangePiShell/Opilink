@@ -1,0 +1,59 @@
+name: Release
+
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check that tag, code, VERSION.txt and CHANGELOG agree
+        shell: pwsh
+        run: |
+          $ver = '${{ github.ref_name }}'.TrimStart('v')
+          "VERSION=$ver" | Out-File -FilePath $env:GITHUB_ENV -Append -Encoding utf8
+          if (-not (Select-String -Path app\AssemblyInfo.cs -SimpleMatch "AssemblyInformationalVersion(`"$ver`")" -Quiet)) { throw "app\AssemblyInfo.cs does not contain version $ver" }
+          if (-not (Select-String -Path VERSION.txt -SimpleMatch "Orange Pi Link $ver " -Quiet)) { throw "VERSION.txt does not contain version $ver" }
+          if (-not (Select-String -Path CHANGELOG.md -SimpleMatch "## [$ver]" -Quiet)) { throw "CHANGELOG.md has no section for $ver" }
+
+      - name: Build OpiLink.exe
+        shell: pwsh
+        run: |
+          $csc = Join-Path $env:WINDIR 'Microsoft.NET\Framework64\v4.0.30319\csc.exe'
+          $src = (Get-ChildItem app -Filter *.cs).FullName
+          & $csc /nologo /codepage:65001 /target:winexe /out:OpiLink.exe /win32icon:assets\app.ico /win32manifest:app\app.manifest /r:System.Windows.Forms.dll /r:System.Drawing.dll $src
+          if ($LASTEXITCODE -ne 0) { throw "csc failed with exit code $LASTEXITCODE" }
+
+      - name: Package zip and checksums
+        shell: pwsh
+        run: |
+          $name = "OpiLink-v$env:VERSION-win-x64"
+          New-Item -ItemType Directory -Path $name | Out-Null
+          Copy-Item OpiLink.exe, README.md, LICENSE -Destination $name
+          Copy-Item assets, lang -Destination $name -Recurse
+          Compress-Archive -Path $name -DestinationPath "$name.zip"
+          $h = (Get-FileHash "$name.zip" -Algorithm SHA256).Hash.ToLower()
+          "$h  $name.zip" | Out-File SHA256SUMS.txt -Encoding ascii
+
+      - name: Release notes from CHANGELOG
+        shell: pwsh
+        run: |
+          $t = Get-Content CHANGELOG.md -Raw
+          $m = [regex]::Match($t, "(?s)## \[" + [regex]::Escape($env:VERSION) + "\][^\r\n]*\r?\n(.*?)(?=\r?\n## \[|\r?\n\[Unreleased\]:|\z)")
+          if (-not $m.Success) { throw "Could not read notes for $env:VERSION" }
+          $m.Groups[1].Value.Trim() | Out-File notes.md -Encoding utf8
+
+      - name: Create GitHub Release
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          $pre = @()
+          if ($env:VERSION -match '-') { $pre = @('--prerelease') }
+          gh release create '${{ github.ref_name }}' "OpiLink-v$env:VERSION-win-x64.zip" SHA256SUMS.txt --title "Orange Pi Link $env:VERSION" --notes-file notes.md @pre

@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build OpiLink.exe (same command as start.bat)
+        shell: pwsh
+        run: |
+          $csc = Join-Path $env:WINDIR 'Microsoft.NET\Framework64\v4.0.30319\csc.exe'
+          if (-not (Test-Path $csc)) { throw "csc.exe not found at $csc" }
+          $src = (Get-ChildItem app -Filter *.cs).FullName
+          & $csc /nologo /codepage:65001 /target:winexe /out:OpiLink.exe /win32icon:assets\app.ico /win32manifest:app\app.manifest /r:System.Windows.Forms.dll /r:System.Drawing.dll $src
+          if ($LASTEXITCODE -ne 0) { throw "csc failed with exit code $LASTEXITCODE" }
+          if (-not (Test-Path OpiLink.exe)) { throw "OpiLink.exe was not produced" }
+          (Get-Item OpiLink.exe).VersionInfo | Format-List ProductName, ProductVersion, FileVersion
+
+      - name: Repository hygiene (no binaries or key files committed)
+        shell: pwsh
+        run: |
+          $bad = git ls-files | Where-Object { $_ -match '\.(exe|dll|pdb|pem|key)$' -or $_ -match 'opilink_ed25519' -or $_ -match '(^|/)\.env$' }
+          if ($bad) { $bad; throw "Files that must not be committed were found." }

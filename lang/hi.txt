@@ -1,0 +1,267 @@
+# Orange Pi Link translation. Format: English text<TAB>translation
+# "*" in the English text matches any text; {0}, {1} in the translation put it back. \n = new line.
+Board IP	बोर्ड IP
+User	उपयोगकर्ता
+Find board on my network	नेटवर्क में बोर्ड खोजें
+Connect and check the board	बोर्ड से जुड़ें और जाँचें
+Type the IP of the board, or press "Find board".	बोर्ड का IP लिखें, या “बोर्ड खोजें” दबाएँ।
+Login uses a key made only for this app. No password is stored.	लॉगिन केवल इस ऐप के लिए बनी कुंजी से होता है। कोई पासवर्ड सहेजा नहीं जाता।
+Searching your network...	नेटवर्क में खोज जारी है...
+Searching your network... *%	नेटवर्क में खोज जारी है... {0}%
+No board found. Check that it is on and on the same modem, or type the IP.	बोर्ड नहीं मिला। जाँचें कि वह चालू है और उसी मोडेम से जुड़ा है, या IP खुद लिखें।
+Found the board: *\n* devices have SSH open; the first one was picked.	बोर्ड मिला: {0}\n{1} डिवाइस पर SSH खुला है; पहला चुना गया।
+Found a device with SSH (not sure it is the board): *\n* devices have SSH open; the first one was picked.	SSH वाला डिवाइस मिला (पक्का नहीं कि बोर्ड है): {0}\n{1} डिवाइस पर SSH खुला है; पहला चुना गया।
+Found the board: *	बोर्ड मिला: {0}
+Found a device with SSH (not sure it is the board): *	SSH वाला डिवाइस मिला (पक्का नहीं कि बोर्ड है): {0}
+Search failed: *	खोज विफल: {0}
+Press "Connect and check the board" (or any tool).	“बोर्ड से जुड़ें और जाँचें” (या कोई भी टूल) दबाएँ।
+Connected to *	{0} से जुड़ा
+System not detected - all tools stay enabled	सिस्टम की पहचान नहीं हुई - सभी टूल चालू रहेंगे
+View board like WSL	बोर्ड को WSL की तरह देखें
+Browse files, download, upload	फ़ाइलें देखें, डाउनलोड, अपलोड
+Board status	बोर्ड की स्थिति
+Temperature, load, memory, disk	तापमान, लोड, मेमोरी, डिस्क
+Open terminal	टर्मिनल खोलें
+A shell on the board	बोर्ड पर शेल
+Reboot / Shutdown	रीबूट / शटडाउन
+Always asks first	पहले हमेशा पूछता है
+Network info	नेटवर्क जानकारी
+IP, Wi-Fi, DNS, internet test	IP, Wi-Fi, DNS, इंटरनेट टेस्ट
+Update packages	पैकेज अपडेट
+Check or install updates	अपडेट जाँचें या इंस्टॉल करें
+No apt, dnf or pacman found	apt, dnf या pacman नहीं मिला
+Services	सेवाएँ
+Start, stop, restart	शुरू, रोकें, रीस्टार्ट
+Not available: needs systemd	उपलब्ध नहीं: systemd चाहिए
+Run command	कमांड चलाएँ
+One command, see the output	एक कमांड, आउटपुट देखें
+Processes	प्रक्रियाएँ
+CPU / RAM list, stop a program	CPU / RAM सूची, प्रोग्राम रोकें
+Not available: ps not found	उपलब्ध नहीं: ps नहीं मिला
+Containers: start, stop, logs	कंटेनर: शुरू, रोकें, लॉग
+Logs	लॉग
+System log, errors, kernel	सिस्टम लॉग, त्रुटियाँ, कर्नेल
+Port forwarding	पोर्ट फ़ॉरवर्डिंग
+Board port -> this PC	बोर्ड पोर्ट -> इस PC पर
+System config	सिस्टम कॉन्फ़िग
+Not available: only on Armbian or DietPi	उपलब्ध नहीं: केवल Armbian या DietPi पर
+Hardware info	हार्डवेयर जानकारी
+Model, CPU, temperatures, clocks	मॉडल, CPU, तापमान, क्लॉक
+Storage / NVMe	स्टोरेज / NVMe
+Disks, usage, SMART health	डिस्क, उपयोग, SMART स्थिति
+Backup	बैकअप
+Save a folder as .tar.gz on this PC	फ़ोल्डर को इस PC पर .tar.gz में सहेजें
+Add the "opi" command to cmd / PowerShell	cmd / PowerShell में “opi” कमांड जोड़ें
+Then type  opi  in any cmd or PowerShell window to open the board, like  wsl  - even when this app is closed. Nothing is installed on the board.	फिर किसी भी cmd या PowerShell विंडो में  opi  लिखें और बोर्ड खुल जाएगा, जैसे  wsl  - ऐप बंद होने पर भी। बोर्ड पर कुछ इंस्टॉल नहीं होता।
+Not installed - click to install	इंस्टॉल नहीं है - इंस्टॉल करने के लिए क्लिक करें
+Armbian config	Armbian कॉन्फ़िग
+DietPi config	DietPi कॉन्फ़िग
+The board at * has a new identity (normal after burning a new card).	{0} पर मौजूद बोर्ड की नई पहचान है (नया कार्ड बर्न करने के बाद यह सामान्य है)।
+Forget the old saved key of this IP and continue?	इस IP की पुरानी सहेजी कुंजी भूलकर आगे बढ़ें?
+First time on this board: Orange Pi Link needs a login key (made only for this app).	इस बोर्ड पर पहली बार: Orange Pi Link को लॉगिन कुंजी चाहिए (केवल इस ऐप के लिए बनती है)।
+A black window will open. Type the password of user "*" on the board there (the letters are not shown) and press Enter. The window closes by itself. Your password is not seen or saved by this app.	एक काला विंडो खुलेगा। उसमें बोर्ड के उपयोगकर्ता “{0}” का पासवर्ड लिखें (अक्षर दिखाई नहीं देते) और Enter दबाएँ। विंडो अपने-आप बंद हो जाएगी। यह ऐप आपका पासवर्ड न देखता है, न सहेजता है।
+The board did not accept the login. The password may have been wrong. Try again.	बोर्ड ने लॉगिन स्वीकार नहीं किया। शायद पासवर्ड गलत था। फिर कोशिश करें।
+Type the IP address of the board, for example 192.168.1.6	बोर्ड का IP पता लिखें, जैसे 192.168.1.6
+Only an address on your own network can be used (10.x, 172.16-31.x, 192.168.x)	केवल आपके अपने नेटवर्क का पता इस्तेमाल हो सकता है (10.x, 172.16-31.x, 192.168.x)
+Only an address on your own network can be opened	केवल आपके अपने नेटवर्क का पता खोला जा सकता है
+The user name can only have lowercase letters, digits, _ and -	उपयोगकर्ता नाम में केवल छोटे अक्षर, अंक, _ और - हो सकते हैं
+The board did not answer in time.	बोर्ड ने समय पर जवाब नहीं दिया।
+Could not make the key: *	कुंजी नहीं बन सकी: {0}
+ssh.exe was not found. Turn on the Windows feature "OpenSSH Client" (Settings > Apps > Optional features).	ssh.exe नहीं मिला। Windows सुविधा “OpenSSH Client” चालू करें (Settings > Apps > Optional features)।
+This PC is not connected to a private network (Wi-Fi or Ethernet). Connect it to the same modem as the Orange Pi.	यह PC निजी नेटवर्क (Wi-Fi या Ethernet) से नहीं जुड़ा है। इसे उसी मोडेम से जोड़ें जिससे Orange Pi जुड़ा है।
+Cancelled by user	उपयोगकर्ता ने रद्द किया
+Check for updates	अपडेट जाँचें
+Install updates	अपडेट इंस्टॉल करें
+Install all available updates on the board now?	अभी बोर्ड पर सभी उपलब्ध अपडेट इंस्टॉल करें?
+This can take several minutes. Do not switch the board off while it runs. Some updates need a reboot afterwards.	इसमें कई मिनट लग सकते हैं। चलते समय बोर्ड बंद न करें। कुछ अपडेट के बाद रीबूट ज़रूरी है।
+An update is still running. Closing this window stops it half-way, which can leave packages broken.	अपडेट अभी चल रहा है। यह विंडो बंद करने से वह बीच में रुक जाएगा, जिससे पैकेज बिगड़ सकते हैं।
+Close anyway?	फिर भी बंद करें?
+System log (last 300 lines)	सिस्टम लॉग (अंतिम 300 पंक्तियाँ)
+Errors since boot	बूट के बाद की त्रुटियाँ
+SSH logins (last 100)	SSH लॉगिन (अंतिम 100)
+Follow live (press Stop to end)	लाइव देखें (रोकने के लिए Stop दबाएँ)
+Kernel messages (dmesg)	कर्नेल संदेश (dmesg)
+Install Docker	Docker इंस्टॉल करें
+Install again	फिर इंस्टॉल
+Docker is not installed on the board, and this system has no apt, dnf or pacman, so it cannot be installed from here.	बोर्ड पर Docker इंस्टॉल नहीं है और इस सिस्टम में apt, dnf या pacman नहीं है, इसलिए यहाँ से इंस्टॉल नहीं हो सकता।
+Docker is not installed on the board.	बोर्ड पर Docker इंस्टॉल नहीं है।
+Install it now?	अभी इंस्टॉल करें?
+It is installed with the system package manager (*). The board needs internet and it takes a few minutes.	यह सिस्टम पैकेज मैनेजर ({0}) से इंस्टॉल होता है। बोर्ड को इंटरनेट चाहिए और कुछ मिनट लगते हैं।
+The installation is still running. Closing this window stops it half-way.	इंस्टॉलेशन अभी चल रहा है। यह विंडो बंद करने से वह बीच में रुक जाएगा।
+Start the service * on the board?	बोर्ड पर सेवा {0} शुरू करें?
+Stop the service * on the board?	बोर्ड पर सेवा {0} रोकें?
+Restart the service * on the board?	बोर्ड पर सेवा {0} रीस्टार्ट करें?
+Warning: this service may keep the board reachable (network or login). Stopping it can cut your connection.	चेतावनी: यह सेवा बोर्ड तक पहुँच बनाए रख सकती है (नेटवर्क या लॉगिन)। इसे रोकने से आपका कनेक्शन कट सकता है।
+Stop process * (*)?	प्रक्रिया {0} ({1}) रोकें?
+Force kill process * (*)?	प्रक्रिया {0} ({1}) को ज़बरदस्ती बंद करें?
+Unsaved work in that program is lost.	उस प्रोग्राम का बिना सहेजा काम खो जाएगा।
+Warning: this looks like a system or login process. Stopping it can cut your connection.	चेतावनी: यह सिस्टम या लॉगिन प्रक्रिया लगती है। इसे रोकने से आपका कनेक्शन कट सकता है।
+Stop the container *?	कंटेनर {0} रोकें?
+Restart the container *?	कंटेनर {0} रीस्टार्ट करें?
+Service	सेवा
+State	स्थिति
+Starts at boot	बूट पर शुरू
+PID	PID
+CPU %	CPU %
+Mem %	मेमोरी %
+Running	चलने का समय
+Command	कमांड
+Container	कंटेनर
+Image	इमेज
+Status	स्थिति
+Ports	पोर्ट
+Name	नाम
+Size	आकार
+Modified	बदला गया
+Start	शुरू
+Stop	रोकें
+Restart	रीस्टार्ट
+Details	विवरण
+Stop (ask nicely)	रोकें (सामान्य)
+Force kill	ज़बरन बंद करें
+Filter	फ़िल्टर
+Refresh every * s	हर {0} सेकंड में रीफ़्रेश
+Loading...	लोड हो रहा है...
+This cannot be done for the selected row.	चुनी गई पंक्ति पर यह नहीं हो सकता।
+Run again	फिर चलाएँ
+Run	चलाएँ
+Refresh	रीफ़्रेश
+Copy	कॉपी
+Cancel	रद्द करें
+Home	होम
+Terminal here	यहाँ टर्मिनल
+Download selected	चुना हुआ डाउनलोड करें
+Upload file here	यहाँ अपलोड करें
+The path must start with /	पथ / से शुरू होना चाहिए
+Looking for the home folder...	होम फ़ोल्डर खोजा जा रहा है...
+Loading * ...	{0} लोड हो रहा है ...
+* items - updated *	{0} आइटम - अपडेट {1}
+* items	{0} आइटम
+Save the folder as a .tar file	फ़ोल्डर को .tar फ़ाइल के रूप में सहेजें
+Save file	फ़ाइल सहेजें
+Downloading *  * of *	{0} डाउनलोड हो रहा है  {1} / {2}
+Downloading *  *	{0} डाउनलोड हो रहा है  {1}
+Download failed: *	डाउनलोड विफल: {0}
+Choose a file to send to *	{0} में भेजने के लिए फ़ाइल चुनें
+This file name cannot be sent.	इस फ़ाइल नाम को भेजा नहीं जा सकता।
+A folder named "*" already exists here.	यहाँ “{0}” नाम का फ़ोल्डर पहले से है।
+* named "*" is already on the board in *.	बोर्ड पर {2} में “{1}” नाम की {0} पहले से है।
+A folder	फ़ोल्डर
+A file	फ़ाइल
+Replace it?	बदलें?
+Uploading *  * of *	{0} अपलोड हो रहा है  {1} / {2}
+Upload failed: *	अपलोड विफल: {0}
+Sent * to *	{0} को {1} में भेजा गया
+Saves one folder of the board as a .tar.gz file on this PC. The folder is only read, nothing is changed on the board.	बोर्ड के एक फ़ोल्डर को इस PC पर .tar.gz फ़ाइल के रूप में सहेजता है। फ़ोल्डर केवल पढ़ा जाता है, बोर्ड पर कुछ नहीं बदलता।
+Folder on board	बोर्ड पर फ़ोल्डर
+Also read files that only root can read (uses sudo; needs passwordless sudo)	वे फ़ाइलें भी पढ़ें जो केवल root पढ़ सकता है (sudo इस्तेमाल होता है; बिना पासवर्ड sudo चाहिए)
+Choose file and start	फ़ाइल चुनें और शुरू करें
+A backup is running. Stop it and delete the unfinished file?	बैकअप चल रहा है। इसे रोकें और अधूरी फ़ाइल हटाएँ?
+The folder must start with /	फ़ोल्डर / से शुरू होना चाहिए
+Pick a folder below /, for example /home or /etc.	/ के अंदर कोई फ़ोल्डर चुनें, जैसे /home या /etc।
+This folder name cannot be used.	यह फ़ोल्डर नाम इस्तेमाल नहीं हो सकता।
+Save the backup as	बैकअप को इस नाम से सहेजें
+Backing up *   * saved so far	{0} का बैकअप हो रहा है   अब तक {1} सहेजा गया
+Backing up * ...	{0} का बैकअप हो रहा है ...
+Cancelled.	रद्द किया गया।
+Some files changed while they were read. The backup was made, but those files may be inconsistent.	कुछ फ़ाइलें पढ़ते समय बदल गईं। बैकअप बन गया, पर वे फ़ाइलें असंगत हो सकती हैं।
+Backup failed: *	बैकअप विफल: {0}
+Saved * to *\nSome files changed while they were read. The backup was made, but those files may be inconsistent.	{0} को {1} में सहेजा गया\nकुछ फ़ाइलें पढ़ते समय बदल गईं। बैकअप बन गया, पर वे फ़ाइलें असंगत हो सकती हैं।
+Saved * to *	{0} को {1} में सहेजा गया
+Shows a port of the board on this PC. Example: a web page on board port 8080 opens at http://127.0.0.1:8080 here. Only this PC can use it, and only while this window is open.	बोर्ड का एक पोर्ट इस PC पर दिखाता है। उदाहरण: बोर्ड के पोर्ट 8080 का वेब पेज यहाँ http://127.0.0.1:8080 पर खुलता है। केवल यही PC इसे इस्तेमाल कर सकता है, और केवल जब तक यह विंडो खुली है।
+Port on the board	बोर्ड का पोर्ट
+Port on this PC	इस PC का पोर्ट
+Open in browser	ब्राउज़र में खोलें
+Forwarding stopped.	फ़ॉरवर्डिंग रुक गई।
+Forwarding stopped. *	फ़ॉरवर्डिंग रुक गई। {0}
+ssh.exe was not found.	ssh.exe नहीं मिला।
+Stopped.	रुक गया।
+A port is a number from 1 to 65535.	पोर्ट 1 से 65535 के बीच की संख्या होती है।
+Port * is already used on this PC. Pick another one.	इस PC पर पोर्ट {0} पहले से इस्तेमाल में है। कोई और चुनें।
+Starting...	शुरू हो रहा है...
+Could not start: *	शुरू नहीं हो सका: {0}
+Running: http://127.0.0.1:*  ->  board port *. Close this window or press Stop to end it.	चल रहा है: http://127.0.0.1:{0}  ->  बोर्ड पोर्ट {1}। रोकने के लिए यह विंडो बंद करें या Stop दबाएँ।
+Both buttons ask before they do anything. Everything running on the board stops.	दोनों बटन कुछ भी करने से पहले पूछते हैं। बोर्ड पर चल रहा सब कुछ रुक जाएगा।
+Reboot	रीबूट
+Shut down	शटडाउन
+Reboot the board now?	अभी बोर्ड रीबूट करें?
+It is back in about a minute.	लगभग एक मिनट में वापस आ जाता है।
+Shut the board down now?	अभी बोर्ड बंद करें?
+To use it again you must switch its power on yourself.	दोबारा इस्तेमाल के लिए आपको खुद पावर चालू करनी होगी।
+Sending the command...	कमांड भेजी जा रही है...
+Not done: *	नहीं हुआ: {0}
+Waiting for the board to go offline...	बोर्ड के ऑफ़लाइन होने की प्रतीक्षा...
+The board is still answering. The command may not have worked.	बोर्ड अब भी जवाब दे रहा है। शायद कमांड काम नहीं की।
+The board is off (*).	बोर्ड बंद है ({0})।
+The board is restarting. Waiting for it to come back...	बोर्ड रीस्टार्ट हो रहा है। वापस आने की प्रतीक्षा...
+The board is back online (*).	बोर्ड फिर ऑनलाइन है ({0})।
+The board did not come back within 4 minutes. Check it.	बोर्ड 4 मिनट में वापस नहीं आया। उसे जाँचें।
+Copied.	कॉपी हो गया।
+Type one command and press Enter. Programs that wait for keys (nano, top) do not work here - use Open terminal.	एक कमांड लिखें और Enter दबाएँ। कुंजी का इंतज़ार करने वाले प्रोग्राम (nano, top) यहाँ नहीं चलते - टर्मिनल खोलें का उपयोग करें।
+Type a command first.	पहले कमांड लिखें।
+Running...	चल रहा है...
+Finished with code * (see the text above).	कोड {0} के साथ समाप्त (ऊपर का टेक्स्ट देखें)।
+Finished *	समाप्त {0}
+Stopped: it took too long.	रोका गया: बहुत देर लग रही थी।
+Could not connect to the board.	बोर्ड से जुड़ नहीं सके।
+This needs root. Log in as root, or give this user passwordless sudo on the board.	इसके लिए root चाहिए। root से लॉगिन करें, या बोर्ड पर इस उपयोगकर्ता को बिना पासवर्ड sudo दें।
+Refresh every 5 seconds	हर 5 सेकंड में रीफ़्रेश
+Updated *	अपडेट {0}
+System	सिस्टम
+Kernel	कर्नेल
+IP address	IP पता
+Uptime	अपटाइम
+Load (1 / 5 / 15 min)	लोड (1 / 5 / 15 मिनट)
+Memory used	उपयोग की गई मेमोरी
+CPU temperature	CPU तापमान
+Drives found	मिले ड्राइव
+The command "opi" is already set up on this PC.	“opi” कमांड इस PC पर पहले से सेट है।
+Yes = update it to *@*\nNo = remove it\nCancel = do nothing	हाँ = {0}@{1} पर अपडेट करें\nनहीं = हटाएँ\nरद्द = कुछ न करें
+The command "opi" was removed.	“opi” कमांड हटा दी गई।
+Add the command "opi" to Windows?	Windows में “opi” कमांड जोड़ें?
+After this, typing  opi  in any cmd or PowerShell window opens a shell on *@* - like typing  wsl  - even when Orange Pi Link is closed.	इसके बाद किसी भी cmd या PowerShell विंडो में  opi  लिखने पर {0}@{1} पर शेल खुलता है - जैसे  wsl  - Orange Pi Link बंद होने पर भी।
+What is added: a small file opi.cmd in\n*\nand that folder in your user PATH (no admin needed). Nothing is installed on the board.	क्या जोड़ा जाता है: एक छोटी फ़ाइल opi.cmd\n{0}\nमें, और वही फ़ोल्डर आपके उपयोगकर्ता PATH में (एडमिन की ज़रूरत नहीं)। बोर्ड पर कुछ इंस्टॉल नहीं होता।
+If the board's IP changes, press this button again.	अगर बोर्ड का IP बदले, तो यह बटन फिर दबाएँ।
+Done. Open a NEW cmd or PowerShell window and type:	हो गया। एक नई cmd या PowerShell विंडो खोलें और लिखें:
+Words after it run one command on the board, for example:  opi ls /	इसके बाद के शब्द बोर्ड पर एक कमांड की तरह चलते हैं, जैसे:  opi ls /
+Could not open the user environment settings.	उपयोगकर्ता एनवायरनमेंट सेटिंग्स नहीं खुल सकीं।
+Storage	स्टोरेज
+Board files	बोर्ड की फ़ाइलें
+Docker	Docker
+Network info - *	नेटवर्क जानकारी - {0}
+Hardware info - *	हार्डवेयर जानकारी - {0}
+Storage - *	स्टोरेज - {0}
+Run command - *	कमांड चलाएँ - {0}
+Update packages - *	पैकेज अपडेट - {0}
+Logs - *	लॉग - {0}
+Install Docker - *	Docker इंस्टॉल करें - {0}
+Services - *	सेवाएँ - {0}
+Processes - *	प्रक्रियाएँ - {0}
+Docker - *	Docker - {0}
+Board status - *	बोर्ड की स्थिति - {0}
+Board files - *	बोर्ड की फ़ाइलें - {0}
+Port forwarding - *	पोर्ट फ़ॉरवर्डिंग - {0}
+Backup - *	बैकअप - {0}
+Reboot / Shutdown - *	रीबूट / शटडाउन - {0}
+Stop (ask nicely) * ...	रोकें (सामान्य) {0} ...
+Stop (ask nicely) * failed: *	रोकें (सामान्य) {0} विफल: {1}
+Stop (ask nicely) * failed:	रोकें (सामान्य) {0} विफल:
+Stop (ask nicely) * done.	रोकें (सामान्य) {0} पूर्ण।
+Force kill * ...	ज़बरन बंद करें {0} ...
+Force kill * failed: *	ज़बरन बंद करें {0} विफल: {1}
+Force kill * failed:	ज़बरन बंद करें {0} विफल:
+Force kill * done.	ज़बरन बंद करें {0} पूर्ण।
+Start * ...	शुरू {0} ...
+Start * failed: *	शुरू {0} विफल: {1}
+Start * failed:	शुरू {0} विफल:
+Start * done.	शुरू {0} पूर्ण।
+Stop * ...	रोकें {0} ...
+Stop * failed: *	रोकें {0} विफल: {1}
+Stop * failed:	रोकें {0} विफल:
+Stop * done.	रोकें {0} पूर्ण।
+Restart * ...	रीस्टार्ट {0} ...
+Restart * failed: *	रीस्टार्ट {0} विफल: {1}
+Restart * failed:	रीस्टार्ट {0} विफल:
+Restart * done.	रीस्टार्ट {0} पूर्ण।
+Details * - *	विवरण {0} - {1}
+Logs * - *	लॉग {0} - {1}

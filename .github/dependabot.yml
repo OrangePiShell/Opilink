@@ -1,0 +1,7 @@
+# The project has no package manager dependencies; only the GitHub Actions versions are kept up to date.
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
