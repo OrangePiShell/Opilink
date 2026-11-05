@@ -1,5 +1,5 @@
 # Orange Pi Link
-
+[![Telegram](https://img.shields.io/badge/Telegram-Opilink-26A5E4?logo=telegram&logoColor=white)](https://t.me/Opilink)
 **Manage your Orange Pi (or any Linux SBC) from Windows with one click: browse its files like WSL, see its status, open a terminal, update it, back it up. No installation on the board.**
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
